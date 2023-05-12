@@ -7,7 +7,9 @@ form.addEventListener('submit', e=>{
   }).then(
     response => response.json()
   ).then((html) => {
-    alert('Your message has been sent successfully!');
+    // you can put any JS code here
+    window.open('notification.html', '_blank');
+
   });
 });
 
