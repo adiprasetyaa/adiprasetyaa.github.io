@@ -11,7 +11,11 @@ function setupNamePlaceholders() {
       const parentScreen = el.closest(".proposal-screen");
 
       // Logika yang Anda minta:
-      if (parentScreen && parentScreen.id === "proposal-1") {
+      if (
+        parentScreen ||
+        parentScreen.id === "proposal-1" ||
+        parentScreen.id === "proposal-4"
+      ) {
         // Jika di layar 1, default-nya "Sweetheart"
         el.textContent = nameFromUrl || "Sweetheart";
       } else {
