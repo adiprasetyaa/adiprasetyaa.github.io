@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You & Me? 💞</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="proposal-1" class="proposal-screen">
+        <img
+          id="Sowrov1"
+          class="sticker"
+          src="animation/animation_1.gif"
+          alt="animation 1"
+        />
+        <h1>hey <span id="JSOrganization-placeholder"></span> 👋</h1>
+        <p>
+          i’ve got a little question for you... would you be my favorite person
+          to text all day and night?
+        </p>
+        <div class="btn">
+          <a href="#" onclick="showProposal('proposal-yes')">ofc!</a>
+          <a href="#" onclick="showProposal('proposal-2')">hm, not yet</a>
+        </div>
+      </div>
+
+      <div id="proposal-2" class="proposal-screen">
+        <img
+          id="Sowrov2"
+          class="sticker"
+          src="animation/animation_2.gif"
+          alt="animation 2"
+        />
+        <h1>wait wait, r u playing hard to get? 😳</h1>
+        <p>because its kinda working... u r already stuck in my head 🙈</p>
+        <div class="btn">
+          <a href="#" onclick="showProposal('proposal-yes')">okay fine, yes</a>
+          <a href="#" onclick="showProposal('proposal-3')">still no</a>
+        </div>
+      </div>
+
+      <div id="proposal-3" class="proposal-screen">
+        <img
+          id="Sowrov3"
+          class="sticker"
+          src="animation/animation_3.gif"
+          alt="animation 3"
+        />
+        <h1>demn, my ego took a hit..</h1>
+        <p>
+          still... if there were a hundred timelines, i’d probably end up
+          choosing <span id="JSOrganization-placeholder-3"></span> in all of
+          them
+        </p>
+        <div class="btn">
+          <a href="#" onclick="showProposal('proposal-yes')"
+            >😉 alright, u got me</a
+          >
+          <a href="#" onclick="showProposal('proposal-4')">😬 still thinking</a>
+        </div>
+      </div>
+
+      <div id="proposal-4" class="proposal-screen">
+        <img
+          id="Sowrov4"
+          class="sticker"
+          src="animation/animation_4.gif"
+          alt="animation 4"
+        />
+        <h1>
+          okay, <span id="JSOrganization-placeholder-4"></span>. last try..
+        </h1>
+        <p>
+          if u say yes, i cant promise perfection, but i swear i’ll make you
+          have a good time when u r with me
+        </p>
+        <div class="btn">
+          <a href="#" onclick="showProposal('proposal-yes')">❤️ u win, yes!</a>
+          <a href="#" id="move-random">💔 not yet (maybe later)</a>
+        </div>
+      </div>
+
+      <div id="proposal-yes" class="proposal-screen">
+        <img
+          id="SSowrov5"
+          class="sticker"
+          src="animation/animation_5.gif"
+          alt="animation 5"
+        />
+        <h1>OMG, <span id="JSOrganization-placeholder-5"></span> said yes!</h1>
+        <p>guess itss official now, u and i, partners in crime (and memes).</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
